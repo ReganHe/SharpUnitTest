@@ -1,5 +1,8 @@
 ﻿namespace HK.Basic.Services
 {
+    /// <summary>
+    /// 计算辅助类
+    /// </summary>
     public class MathHelper
     {
         public bool IsOdd(int value)
