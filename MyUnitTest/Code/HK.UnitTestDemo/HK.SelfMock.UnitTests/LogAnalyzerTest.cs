@@ -1,4 +1,5 @@
-﻿using HK.SelfMock.Service;
+﻿using HK.SelfMock.ExternalService.Services;
+using HK.SelfMock.Service;
 using Xunit;
 
 namespace HK.SelfMock.UnitTests

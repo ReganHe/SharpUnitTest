@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FakeExtensionManager.cs" />
-    <Compile Include="FileExtensionManager.cs" />
-    <Compile Include="IExtensionManager.cs" />
     <Compile Include="LogAnalyzer.cs" />
-    <Compile Include="LogAnalyzerUsingFactoryMethod.cs" />
-    <Compile Include="LogAnalyzer_Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HK.SelfStub.ExternalService\HK.SelfStub.ExternalService.csproj">
+      <Project>{57714cb8-357a-41c3-8b6c-a9d64a4a47ce}</Project>
+      <Name>HK.SelfStub.ExternalService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

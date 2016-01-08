@@ -1,6 +1,7 @@
 ﻿using System;
+using HK.SelfMock.ExternalService.Contract;
 
-namespace HK.SelfMock.Service
+namespace HK.SelfMock.ExternalService.Services
 {
     public class FakeWebService : IWebService
     {

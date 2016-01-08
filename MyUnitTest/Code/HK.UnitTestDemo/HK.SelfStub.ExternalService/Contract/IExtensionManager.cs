@@ -1,4 +1,4 @@
-﻿namespace HK.SelfStub.Service
+﻿namespace HK.SelfStub.ExternalService.Contract
 {
     public interface IExtensionManager
     {

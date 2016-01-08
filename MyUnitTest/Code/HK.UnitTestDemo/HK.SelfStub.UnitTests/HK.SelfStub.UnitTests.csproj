@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LogAnalyzerTests.cs" />
-    <Compile Include="LogAnalyzerUsingFactoryMethodTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +74,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HK.SelfStub.ExternalService\HK.SelfStub.ExternalService.csproj">
+      <Project>{57714CB8-357A-41C3-8B6C-A9D64A4A47CE}</Project>
+      <Name>HK.SelfStub.ExternalService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HK.SelfStub.Service\HK.SelfStub.Service.csproj">
       <Project>{ba5cbc16-cf26-4e06-b31f-a30f3faddfe6}</Project>
       <Name>HK.SelfStub.Service</Name>

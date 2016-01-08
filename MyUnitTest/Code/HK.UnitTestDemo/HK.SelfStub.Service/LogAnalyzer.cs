@@ -1,4 +1,6 @@
-﻿namespace HK.SelfStub.Service
+﻿using HK.SelfStub.ExternalService.Contract;
+
+namespace HK.SelfStub.Service
 {
     public class LogAnalyzer
     {

@@ -1,4 +1,4 @@
-﻿namespace HK.SelfMock.Service
+﻿namespace HK.SelfMock.ExternalService.Contract
 {
     public interface IWebService
     {

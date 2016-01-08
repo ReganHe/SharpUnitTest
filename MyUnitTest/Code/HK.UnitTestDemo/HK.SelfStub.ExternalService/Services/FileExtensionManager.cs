@@ -1,6 +1,7 @@
 ﻿using System;
+using HK.SelfStub.ExternalService.Contract;
 
-namespace HK.SelfStub.Service
+namespace HK.SelfStub.ExternalService.Services
 {
     public class FileExtensionManager : IExtensionManager
     {

@@ -1,4 +1,6 @@
-﻿namespace HK.SelfMock.Service
+﻿using HK.SelfMock.ExternalService.Contract;
+
+namespace HK.SelfMock.Service
 {
     public class LogAnalyzer
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using HK.SelfStub.ExternalService.Services;
 using HK.SelfStub.Service;
 using Xunit;
 
