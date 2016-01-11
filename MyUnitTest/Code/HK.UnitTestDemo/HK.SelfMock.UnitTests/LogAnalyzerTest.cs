@@ -1,4 +1,5 @@
-﻿using HK.SelfMock.ExternalService.Services;
+﻿using System;
+using HK.SelfMock.ExternalService.Services;
 using HK.SelfMock.Service;
 using Xunit;
 
@@ -14,6 +15,19 @@ namespace HK.SelfMock.UnitTests
             const string tooShortFileName = "abc.ext";
             log.Analyze(tooShortFileName);
             Assert.Equal("FileName too short:abc.ext", mockService.LastError);
+        }
+
+        [Fact]
+        public void Analyze_WebServiceThrows_ThrowException()
+        {
+            var stubService = new FakeWebService
+            {
+                ToThrow = new Exception("fake exception")
+            };
+
+            var log = new LogAnalyzer(stubService);
+            const string tooShortFileName = "abc.ext";
+            Assert.Throws<Exception>(() => log.Analyze(tooShortFileName));
         }
     }
 }

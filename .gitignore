@@ -30,3 +30,4 @@ MyUnitTest/Code/HK.UnitTestDemo/HK.SelfStub.Service/bin/
 MyUnitTest/Code/HK.UnitTestDemo/HK.SelfStub.UnitTests/bin/
 MyUnitTest/Code/HK.UnitTestDemo/HK.UnitTestDemo.v12.suo
 MyUnitTest/Code/HK.UnitTestDemo/HK.SelfStub.ExternalService/bin/
+*.user

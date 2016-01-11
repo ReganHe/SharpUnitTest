@@ -39,9 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\FakeEmailService.cs" />
     <Compile Include="Services\FakeWebService.cs" />
-    <Compile Include="Contract\IEmailService.cs" />
     <Compile Include="Contract\IWebService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
