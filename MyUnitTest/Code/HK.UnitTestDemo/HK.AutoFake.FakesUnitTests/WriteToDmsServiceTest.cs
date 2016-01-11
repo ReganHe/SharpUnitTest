@@ -40,7 +40,7 @@ namespace HK.AutoFake.FakesUnitTests
             using (ShimsContext.Create())
             {
                 ShimExternalDmsService.AllInstances.WriteStringByteArray = (t0, t1, t2) => true;
-                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
                 var service = new WriteToDmsService();
                 bool result = service.WriteImage(filePath);
                 Assert.IsTrue(result);
@@ -53,7 +53,7 @@ namespace HK.AutoFake.FakesUnitTests
             using (ShimsContext.Create())
             {
                 ShimExternalDmsService.AllInstances.WriteStringByteArray = (t0, t1, t2) => false;
-                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
                 var service = new WriteToDmsService();
                 bool result = service.WriteImage(filePath);
                 Assert.IsFalse(result);
@@ -71,7 +71,7 @@ namespace HK.AutoFake.FakesUnitTests
                 };
                 try
                 {
-                    var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+                    var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
                     var service = new WriteToDmsService();
                     service.WriteImage(filePath);
                 }

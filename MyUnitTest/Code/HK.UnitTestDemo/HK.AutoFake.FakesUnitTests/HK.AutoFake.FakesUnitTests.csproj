@@ -68,9 +68,6 @@
       <Name>HK.AutoFake.ExternalService</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Fakes Include="Fakes\HK.AutoFake.ExternalService.fakes" />
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

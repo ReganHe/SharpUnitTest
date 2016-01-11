@@ -40,7 +40,7 @@ namespace HK.AutoFake.MoqUnitTests
             var imageWritorMock = new Mock<IImageWritor>();
             imageWritorMock.Setup(obj => obj.Write(It.IsAny<string>(), It.IsAny<byte[]>())).Returns(true);
             var service = new WriteToFspService(imageWritorMock.Object);
-            var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+            var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
             var result = service.WriteImage(filePath);
             Assert.IsTrue(result);
         }
@@ -51,7 +51,7 @@ namespace HK.AutoFake.MoqUnitTests
             var imageWritorMock = new Mock<IImageWritor>();
             imageWritorMock.Setup(obj => obj.Write(It.IsAny<string>(), It.IsAny<byte[]>())).Returns(false);
             var service = new WriteToFspService(imageWritorMock.Object);
-            var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+            var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
             var result = service.WriteImage(filePath);
             Assert.IsFalse(result);
         }
@@ -67,7 +67,7 @@ namespace HK.AutoFake.MoqUnitTests
             try
             {
                 var service = new WriteToFspService(imageWritorMock.Object);
-                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.MockDemo.Business.dll");
+                var filePath = string.Format("{0}\\{1}", AppDomain.CurrentDomain.BaseDirectory, "HK.AutoFake.Business.dll");
                 service.WriteImage(filePath);
             }
             catch (ApplicationException ex)
