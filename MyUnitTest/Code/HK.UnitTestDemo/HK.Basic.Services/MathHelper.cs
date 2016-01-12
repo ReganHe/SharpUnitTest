@@ -19,5 +19,33 @@
         {
             return x / y;
         }
+
+        public double Multiply(int x, int y)
+        {
+            return x * y;
+        }
+
+        public double GetDiscount(int type)
+        {
+            switch (type)
+            {
+                case 1:
+                {
+                    return 0.95;
+                }
+                case 2:
+                {
+                    return 0.9;
+                }
+                case 3:
+                {
+                    return 0.8;
+                }
+                default:
+                {
+                    return 0.98;
+                }
+            }
+        }
     }
 }
